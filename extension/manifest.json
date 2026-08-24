@@ -10,7 +10,9 @@
   "host_permissions": [
     "https://music.youtube.com/*",
     "http://localhost:8080/*",
-    "ws://localhost:8080/*"
+    "ws://localhost:8080/*",
+    "https://syncmeh.onrender.com/*",
+    "wss://syncmeh.onrender.com/*"
   ],
   "action": {
     "default_popup": "popup.html",

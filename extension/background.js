@@ -6,7 +6,7 @@ console.log("🛠️ [SyncMeh Background] Service Worker initialized.");
 let currentRoomId = "room123";
 
 // Connect to Spring Boot WebSocket from the background service worker
-const stompClient = new StompClient("ws://localhost:8080/ws-sync");
+const stompClient = new StompClient("wss://syncmeh.onrender.com/ws-sync");
 
 function forwardToTabs(message) {
   chrome.tabs.query({ url: "https://music.youtube.com/*" }, (tabs) => {
